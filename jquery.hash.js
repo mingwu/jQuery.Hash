@@ -3,11 +3,7 @@
  * @author  ydr.me
  */
 
-
-
-module.exports = function($) {
-    'use strict';
-
+new function(settings) {
     var
         udf,
         win = window,
@@ -460,5 +456,4 @@ module.exports = function($) {
             return the;
         }
     };
-
-};
+}(jQuery.hash || {});
